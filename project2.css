@@ -30,7 +30,7 @@ a {
 }
 
 .offscreen {
-  top: -1000px;
+  visibility: hidden;
   font-size: 1px;
 }
 
