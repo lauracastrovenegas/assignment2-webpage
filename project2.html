@@ -8,51 +8,48 @@
   <script src="project2.js"></script>
 </head>
 <body>
-<div class="offscreen">Main Content</div>
-<div class="container">
-<div class="navigation">
-  <a href="#home"><img src="pics/home.png" alt="Home"></a><a href="#links"><img src="pics/links.png" alt="Links"></a> <a href="#signup"><img src="pics/signup.png" alt="Sign Up"></a>
-</div>
+  <div class="offscreen">Main Content</div>
+  <div class="container">
+    <div class="navigation">
+      <a href="#home"><img src="pics/home.png" alt="Home"></a><a href="#links"><img src="pics/links.png" alt="Links"></a> <a href="#signup"><img src="pics/signup.png" alt="Sign Up"></a>
+    </div>
 
-<div id="accessibilitybanner"></div>
+    <div id="accessibilitybanner">
+      <img src="pics/accessibilityoverviewbanner.png" alt="Accessibility Overview"/>
+    </div>
 
-<video width="480" height="360" id="thevideo">
-  <source src="employment-movie.mp4" type="video/mp4">
-</video>
-<div id="videoplayer">
-  <input type="image" width="50px" height="50px" src="pics/play.png" alt="Play Icon" aria-label="Play" role="button">
-</div>
+    <iframe width="480" height="360" id="thevideo"
+      src="https://www.youtube.com/embed/cwCgL2dYTJk">
+    </iframe>
 
-<h2 id="links" class="heading2">Links</h2>
-<img src="pics/dot.png" alt="dot"/>&nbsp;<a href="https://www.barnardhci.com">Accessibility Research at Hamilton</a><br>
-<img src="pics/dot.png" alt="dot"/>&nbsp;<a href="https://www.hamilton.edu/offices/dos/accessibility">Disability Services at Hamilton</a><br>
-<img src="pics/dot.png" alt="dot"/>&nbsp;<a href="https://xkcd.com/">XKCD</a><br>
-<img src="pics/dot.png" alt="dot"/>&nbsp;<a href="https://www.youtube.com/watch?v=HtTyRajRuyY">A11ycasts Videos</a><br>
+    <h2 id="links" class="heading2">Links</h2>
+    <img src="pics/dot.png" alt="dot"/>&nbsp;<a href="https://www.barnardhci.com">Accessibility Research at Hamilton</a><br>
+    <img src="pics/dot.png" alt="dot"/>&nbsp;<a href="https://www.hamilton.edu/offices/dos/accessibility">Disability Services at Hamilton</a><br>
+    <img src="pics/dot.png" alt="dot"/>&nbsp;<a href="https://xkcd.com/">XKCD</a><br>
+    <img src="pics/dot.png" alt="dot"/>&nbsp;<a href="https://www.youtube.com/watch?v=HtTyRajRuyY">A11ycasts Videos</a><br>
 
+    <h2 id="signup" class="heading2">Sign Up!</h2>
 
-<h2 id="signup" class="heading2">Sign Up!</h2>
-<form id="sign-up-form">
-
-<p>
-  <label id="name" for="fn">Name:</label> <input name="fn" type="text" size="10" id="fn" aria-label="First Name"> <input name="mi" type="text" size="1" id="mi" aria-label="Middle Initial">. <input name="ln" type="text" size="10" id="ln" aria-label="Last Name"><br>
-</p>
-<p>
-  <label id="email" for="em">Email:</label> <input id="em" name="em" type="text" size="20">
-</p>
-<p>
-  <span id="spamtext">Would you like to receive occassional emails with offers from us?</span>
-  <div id="receivespambutton">
-    <img src="pics/checked.png" alt="checkbox" aria-label="Unchecked">
-  </div>
-  <input type="hidden" name="spamyn" id="spamyn" value="n" aria-label="Receive Emails Checkbox">
-</p>
-<p>
-  <label for="comments">Comments:</label><br>
-  <textarea id="comments" rows="5" cols="40"></textarea>
-</p>
- <input type="button" value="Sign Up!" id="signupbutton" aria-label="Sign Up">
-</form>
-
-</div><!-- end div.container -->
+    <form id="sign-up-form" aria-label="Add a comment">
+      <p>
+        <label id="name" for="fn">Name:</label> <input name="fn" type="text" size="10" id="fn" aria-label="First Name"> <input name="mi" type="text" size="1" id="mi" aria-label="Middle Initial">. <input name="ln" type="text" size="10" id="ln" aria-label="Last Name"><br>
+      </p>
+      <p>
+        <label id="email" for="em">Email:</label> <input id="em" name="em" type="text" size="20">
+      </p>
+      <p>
+        <span id="spamtext">Would you like to receive occassional emails with offers from us?</span>
+        <div>
+          <input role="checkbox" type="image" src="pics/checked.png" alt="checkbox" aria-label="checked" id="receivespambutton" value="n" name="spamyn">
+        </div>
+        
+      </p>
+      <p>
+        <label for="comments">Comments:</label><br>
+        <textarea id="comments" rows="5" cols="40"></textarea>
+      </p>
+      <input type="button" value="Sign Up!" id="signupbutton" aria-label="Sign Up">
+    </form>
+  </div><!-- end div.container -->
 </body>
 </html>

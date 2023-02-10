@@ -1,30 +1,15 @@
 $(document).ready(function() {
   // Toggle the receive spam checkbox
   $("#receivespambutton").click(function() {
-
-    if($($("#receivespambutton").children()[0]).attr("src")=="pics/unchecked.png") {
-      $($("#receivespambutton").children()[0]).attr("src","pics/checked.png");
-      $($("#receivespambutton").children()[0]).attr("aria-label","Checked");
-      $("#spamyn").val("y");
+    console.log("checkbox clicked")
+    if($("#receivespambutton").attr("src")=="pics/unchecked.png") {
+      $("#receivespambutton").attr("src","pics/checked.png");
+      $("#receivespambutton").attr("aria-label","Checked");
+      $("#receivespambutton").val("y");
     } else {
-      $($("#receivespambutton").children()[0]).attr("src","pics/unchecked.png");
-      $($("#receivespambutton").children()[0]).attr("aria-label","Unchecked");
-      $("#spamyn").val("n");
-    }
-  });
-
-
-  // Play video
-  $("#videoplayer").mousedown(function() {
-
-    if($($("#videoplayer").children()[0]).attr("src")=="pics/play.png") {
-      $($("#videoplayer").children()[0]).attr("src","pics/pause.jpg");
-      $($("#videoplayer").children()[0]).attr("aria-label","Pause");
-      $("#thevideo")[0].play();
-    } else {
-      $($("#videoplayer").children()[0]).attr("src","pics/play.png");
-      $($("#videoplayer").children()[0]).attr("aria-label","Play");
-      $("#thevideo")[0].pause();
+      $("#receivespambutton").attr("src","pics/unchecked.png");
+      $("#receivespambutton").attr("aria-label","Unchecked");
+      $("#receivespambutton").val("n");
     }
   });
 
