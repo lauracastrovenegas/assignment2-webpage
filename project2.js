@@ -1,6 +1,7 @@
 $(document).ready(function() {
   // Toggle the receive spam checkbox
-  $("#receivespambutton").click(function() {
+  $("#receivespambutton").click(function(e) {
+    e.preventDefault(); 
     console.log("checkbox clicked")
     if($("#receivespambutton").attr("src")=="pics/unchecked.png") {
       $("#receivespambutton").attr("src","pics/checked.png");
