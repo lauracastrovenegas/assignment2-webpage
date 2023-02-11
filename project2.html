@@ -35,15 +35,16 @@
       <h2 id="signup" class="heading2">Sign Up!</h2>
 
       <form id="sign-up-form" aria-label="Add a comment">
+        <p id="error-msg" class="error hidden" aria-live>There is an error with the form. Please fill out all of the fields properly. Fields with errors are marked by **.</p>
         <p>
           <label id="name" for="fn">Name:</label>
-          <input name="fn" type="text" size="10" id="fn" aria-label="First Name">
-          <input name="mi" type="text" size="1" id="mi" aria-label="Middle Initial">.
-          <input name="ln" type="text" size="10" id="ln" aria-label="Last Name"><br>
+          <input name="fn" type="text" size="10" id="fn" aria-label="First Name" aria-required>
+          <input name="mi" type="text" size="1" id="mi" aria-label="Middle Initial" aria-required>.
+          <input name="ln" type="text" size="10" id="ln" aria-label="Last Name" aria-required><br>
         </p>
         <p>
           <label id="email" for="em">Email:</label>
-          <input id="em" name="em" type="text" size="20">
+          <input id="em" name="em" type="text" size="20" aria-required>
         </p>
         <p>
           <label id="spamtext">Would you like to receive occassional emails with offers from us?</label>

@@ -18,18 +18,25 @@ $(document).ready(function() {
   $("#signupbutton").click(function() {
     if($("#fn").val()=="" || $("#mi").val()=="" || $("#ln").val()=="") {
       $("#name").addClass("error");
-
+      $("#name").text("** Name:");
+      $("#error-msg").removeClass("hidden");
       return;
     } else {
       $("#name").removeClass("error");
+      $("#name").text("Name:");
+      $("#error-msg").addClass("hidden");
     }
 
     if($("#em").val()=="") {
       $("#email").addClass("error");
+      $("#email").text("** Email:");
+      $("#error-msg").removeClass("hidden");
 
       return;
     } else {
-      $("#name").removeClass("error");
+      $("#email").removeClass("error");
+      $("#email").text("Email:");
+      $("#error-msg").addClass("hidden");
     }
 
     alert("Thank you!  Please watch your email for our exciting newsletter and offers!");

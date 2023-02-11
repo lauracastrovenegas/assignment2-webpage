@@ -25,7 +25,6 @@ input,textarea {
 }
 
 a {
-  text-decoration: none;
   color: #595959;
 }
 
@@ -42,6 +41,11 @@ a {
 
 .error {
   color: #B30000;
+}
+
+.hidden {
+  visibility: hidden;
+  display: none;
 }
 
 #accessibilitybanner {
