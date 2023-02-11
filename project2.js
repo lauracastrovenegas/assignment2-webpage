@@ -5,11 +5,11 @@ $(document).ready(function() {
     console.log("checkbox clicked")
     if($("#receivespambutton").attr("src")=="pics/unchecked.png") {
       $("#receivespambutton").attr("src","pics/checked.png");
-      $("#receivespambutton").attr("aria-label","Checked");
+      $("#receivespambutton").attr("aria-checked","true");
       $("#receivespambutton").val("y");
     } else {
       $("#receivespambutton").attr("src","pics/unchecked.png");
-      $("#receivespambutton").attr("aria-label","Unchecked");
+      $("#receivespambutton").attr("aria-checked","false");
       $("#receivespambutton").val("n");
     }
   });
